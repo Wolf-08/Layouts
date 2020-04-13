@@ -1,0 +1,45 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.site-header {
+    padding: 20px 0;
+}
+
+.contenedor {
+    max-width: 1200px;
+    /* height: 95%; */
+    margin: 0 auto;
+}
+
+
+/***Navegacion**/
+
+.barra {
+    background-color: #db008d;
+}
+
+.navegacion-principal a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal a {
+        display: inline-block;
+        /*Inline no aplica el padding**/
+        margin-right: 15px;
+    }
+}
+
+.navegacion-principal a:hover {
+    background-color: #00b8e4;
+}
