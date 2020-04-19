@@ -1,0 +1,140 @@
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    font-size: 62.5%;
+}
+
+:root {
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+h3 {
+    color: var(--secundario);
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    min-height: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    font-size: 1.6rem;
+}
+
+.site-header {
+    background-color: white;
+}
+
+.site-header nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 2rem 0;
+    /* padding-right: 1rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .site-header nav {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+.site-header nav a {
+    text-decoration: none;
+    color: #212121;
+    /* color: var(--oscuro); */
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.site-header nav a:last-of-type {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .site-header nav a {
+        margin-bottom: 2rem;
+    }
+}
+
+.hero {
+    height: 45rem;
+    background-image: url(/img/hero2.jpg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::after {
+    content: '';
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.contenedor-hero {
+    color: white;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.contenedor-hero i {
+    font-size: 4.5rem;
+    color: var(--primario);
+}
+
+.boton {
+    text-decoration: none;
+    font-size: 2.2rem;
+    padding: 1rem 4rem;
+    background-color: var(--secundario);
+    display: inline-block;
+    margin-top: 1rem;
+    color: white;
+    font-weight: 700;
+    border-radius: .5rem;
+}
+
+.contenedor {
+    max-width: 1200px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: -4px 10px 14px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -4px 10px 14px 0px rgba(0, 0, 0, 1);
+    box-shadow: -4px 10px 14px 0px rgba(0, 0, 0, 1);
+}
+
+.servicios {
+    margin: 3rem auto;
+}
